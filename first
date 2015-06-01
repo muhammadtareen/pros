@@ -1,0 +1,55 @@
+<?php
+session_start();
+?>
+<html>
+<head>
+	<title>Admin Panel</title>
+	<link rel="stylesheet" type="text/css" href="../css/admin.css">
+	   <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+	<nav>
+		<div id="first-div">
+			<div id="title">
+				<a href="../index.php"><h3>Add to Cart System</h3></a>
+			</div>
+			<div id="menu">
+				<ul>
+					<li ><a href="#" style="color:red;"><?php echo $_SESSION['emailbox'];?></a></li>
+					<li><a href="admin.php">Home</a></li>
+					<li><a href="#">Settings</a></li>
+					<li><a href="logout.php">Logout</a></li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+	 		<ul class="nav nav-sidebar">
+	 			<li class="active"><a href="#">Menu<span class="sr-only">(current)</span></a></li> <br><br>
+	            <li class="active"><a href="admin.php">Home<span class="sr-only">(current)</span></a></li>
+	            <li><a href="../addproduct.html">Add Products</a></li>
+	            
+	            <li><a href="productrecord.php">Products Records</a></li>
+	            <li><a href="modifyusers.php">Modify Users</a></li>
+	           
+          </ul>
+    	</div>
+    	<div class="mainbody">
+    		<div class="dashboard">
+    			<h1>Dashboard</h1>
+
+    		</div>
+    		<img src="../img/a.jpg" alt="asdjh" width="1107" height="500">
+    	</div>
+	  </div>
+
+	</div>
+
+	 <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+</body>
+</html>
